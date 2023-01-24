@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react"
-import { Box, TextInput, TextInputProps, Text } from "@ignite-ui/react"
+import { Box, TextInput, TextInputProps, Text } from "@skuth-ignite-ui/react"
 
 type StoryObjType = StoryObj<TextInputProps>
 

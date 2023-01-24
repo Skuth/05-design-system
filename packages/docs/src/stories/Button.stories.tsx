@@ -1,5 +1,5 @@
 import type { StoryObj, Meta } from "@storybook/react"
-import { Button, ButtonProps } from "@ignite-ui/react"
+import { Button, ButtonProps } from "@skuth-ignite-ui/react"
 import { ArrowRight } from "phosphor-react"
 
 type StoryObjType = StoryObj<ButtonProps>

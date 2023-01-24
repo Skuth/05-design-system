@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react"
-import { Box, Checkbox, CheckboxProps, Text } from "@ignite-ui/react"
+import { Box, Checkbox, CheckboxProps, Text } from "@skuth-ignite-ui/react"
 
 type StoryObjType = StoryObj<CheckboxProps>
 

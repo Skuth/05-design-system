@@ -1,5 +1,5 @@
 import { ComponentProps, ElementType } from "react";
-import { getVariantFontSize } from "@ignite-ui/tokens"
+import { getVariantFontSize } from "@skuth-ignite-ui/tokens"
 
 import { styled } from "../../styles";
 

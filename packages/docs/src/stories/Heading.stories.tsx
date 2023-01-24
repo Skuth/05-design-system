@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react"
-import { Heading, HeadingProps } from "@ignite-ui/react"
+import { Heading, HeadingProps } from "@skuth-ignite-ui/react"
 
 type StoryObjType = StoryObj<HeadingProps>
 

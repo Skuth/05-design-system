@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react"
-import { Text, TextProps } from "@ignite-ui/react"
-import { fontSizes } from "@ignite-ui/tokens"
+import { Text, TextProps } from "@skuth-ignite-ui/react"
+import { fontSizes } from "@skuth-ignite-ui/tokens"
 
 type StoryObjType = StoryObj<TextProps>
 
