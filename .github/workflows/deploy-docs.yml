@@ -24,7 +24,7 @@ jobs:
       - run: yarn build
         env:
           TURBO_TOKEN: ${{ secrets.VERCEL_TOKEN }}
-          TURBO_TEAM: skuth-ignite
+          TURBO_TEAM: ${{ secrets.VERCEL_TEAM }}
 
       - name: Deploy storybook
         working-directory: ./packages/docs
