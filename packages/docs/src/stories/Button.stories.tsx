@@ -1,62 +1,62 @@
-import type { StoryObj, Meta } from "@storybook/react"
-import { Button, ButtonProps } from "@skuth-ignite-ui/react"
-import { ArrowRight } from "phosphor-react"
+import type { StoryObj, Meta } from '@storybook/react'
+import { Button, ButtonProps } from '@skuth-ignite-ui/react'
+import { ArrowRight } from 'phosphor-react'
 
 type StoryObjType = StoryObj<ButtonProps>
 
 export default {
-  title: "Form/Button",
+  title: 'Form/Button',
   component: Button,
   args: {
-    children: "Send",
+    children: 'Send',
   },
   argTypes: {
     variant: {
-      options: ["primary", "secondary", "tertiary"],
+      options: ['primary', 'secondary', 'tertiary'],
       control: {
-        type: "inline-radio"
+        type: 'inline-radio',
       },
-      defaultValue: "primary"
+      defaultValue: 'primary',
     },
     size: {
-      options: ["sm", "md"],
+      options: ['sm', 'md'],
       control: {
-        type: "inline-radio"
+        type: 'inline-radio',
       },
-      defaultValue: "md"
+      defaultValue: 'md',
     },
     disabled: {
       control: {
-        type: "boolean",
+        type: 'boolean',
       },
-      defaultValue: false
+      defaultValue: false,
     },
     onClick: {
-      action: "click"
-    }
-  }
+      action: 'click',
+    },
+  },
 } as Meta<ButtonProps>
 
 export const Primary: StoryObjType = {}
 
 export const Secondary: StoryObjType = {
   args: {
-    variant: "secondary",
-    children: "Create new"
-  }
+    variant: 'secondary',
+    children: 'Create new',
+  },
 }
 
 export const Tertiary: StoryObjType = {
   args: {
-    variant: "tertiary",
-    children: "Cancel"
-  }
+    variant: 'tertiary',
+    children: 'Cancel',
+  },
 }
 
 export const Small: StoryObjType = {
   args: {
-    size: "sm"
-  }
+    size: 'sm',
+  },
 }
 
 export const WithIcon: StoryObjType = {
@@ -66,13 +66,12 @@ export const WithIcon: StoryObjType = {
         Next Step
         <ArrowRight weight="bold" />
       </>
-    )
-  }
+    ),
+  },
 }
-
 
 export const Disabled: StoryObjType = {
   args: {
-    disabled: true
-  }
+    disabled: true,
+  },
 }

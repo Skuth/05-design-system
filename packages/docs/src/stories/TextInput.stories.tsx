@@ -1,44 +1,48 @@
-import type { Meta, StoryObj } from "@storybook/react"
-import { Box, TextInput, TextInputProps, Text } from "@skuth-ignite-ui/react"
+import type { Meta, StoryObj } from '@storybook/react'
+import { Box, TextInput, TextInputProps, Text } from '@skuth-ignite-ui/react'
 
 type StoryObjType = StoryObj<TextInputProps>
 
 export default {
-  title: "Form/Text Input",
+  title: 'Form/Text Input',
   component: TextInput,
   args: {
-    placeholder: "Type your name"
+    placeholder: 'Type your name',
   },
   argTypes: {
     disabled: {
       control: {
-        type: "boolean"
+        type: 'boolean',
       },
-      defaultValue: false
-    }
+      defaultValue: false,
+    },
   },
   decorators: [
     (Story) => {
       return (
-        <Box as="label" css={{ display: "flex", flexDirection: "column", gap: "$2" }}>
+        <Box
+          as="label"
+          css={{ display: 'flex', flexDirection: 'column', gap: '$2' }}
+        >
           <Text size="sm">Email address</Text>
           {Story()}
         </Box>
       )
-    }
-  ]
+    },
+  ],
 } as Meta<TextInputProps>
 
 export const Default: StoryObjType = {}
 
 export const WithPrefix: StoryObjType = {
   args: {
-    prefix: "call.com/"
-  }
+    prefix: 'call.com/',
+    placeholder: 'your-username',
+  },
 }
 
 export const Disabled: StoryObjType = {
   args: {
-    disabled: true
-  }
+    disabled: true,
+  },
 }
